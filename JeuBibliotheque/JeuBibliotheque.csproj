@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5987BF32-3A73-475C-889D-9BACA7615F7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JeuBibliotheque</RootNamespace>
+    <AssemblyName>JeuBibliotheque</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JeuDifficile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JeuDifficile.Designer.cs">
+      <DependentUpon>JeuDifficile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JeuDifficileChrono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JeuFacile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JeuFacileChrono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pause.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pause.Designer.cs">
+      <DependentUpon>Pause.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PauseDifficile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PauseDifficile.Designer.cs">
+      <DependentUpon>PauseDifficile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PauseDifficileChrono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PauseDifficileChrono.Designer.cs">
+      <DependentUpon>PauseDifficileChrono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PauseFacileChrono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PauseFacileChrono.Designer.cs">
+      <DependentUpon>PauseFacileChrono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="JeuDifficile.resx">
+      <DependentUpon>JeuDifficile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JeuDifficileChrono.resx">
+      <DependentUpon>JeuDifficileChrono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JeuFacile.resx">
+      <DependentUpon>JeuFacile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pause.resx">
+      <DependentUpon>Pause.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PauseDifficile.resx">
+      <DependentUpon>PauseDifficile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PauseDifficileChrono.resx">
+      <DependentUpon>PauseDifficileChrono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PauseFacileChrono.resx">
+      <DependentUpon>PauseFacileChrono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dino_Bleu-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dino_Gris-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dino_Rose-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dino_Vert-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kit_de_soin-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mur1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mur2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bai-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gigot-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gourdinBas-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gourdinDroitev2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gourdinGauchev2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gourdin-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gourdinv3-removebg-preview-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersoBas-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersoDroite-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersoGauche-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersoHaut-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-04-14 151646.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caveman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coeurblanc-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coeurrouge-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameover.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

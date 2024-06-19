@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacMan", "PacMan\PacMan.csproj", "{F26E1B23-4BF6-4A0F-B918-D6F9BFE8AB89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuBibliotheque", "JeuBibliotheque\JeuBibliotheque.csproj", "{5987BF32-3A73-475C-889D-9BACA7615F7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F26E1B23-4BF6-4A0F-B918-D6F9BFE8AB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F26E1B23-4BF6-4A0F-B918-D6F9BFE8AB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F26E1B23-4BF6-4A0F-B918-D6F9BFE8AB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F26E1B23-4BF6-4A0F-B918-D6F9BFE8AB89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5987BF32-3A73-475C-889D-9BACA7615F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5987BF32-3A73-475C-889D-9BACA7615F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5987BF32-3A73-475C-889D-9BACA7615F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5987BF32-3A73-475C-889D-9BACA7615F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45689451-DBE7-4E49-A902-D4BF121AFF49}
+	EndGlobalSection
+EndGlobal
